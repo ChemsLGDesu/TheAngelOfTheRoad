@@ -19,11 +19,10 @@ public class GameManager : MonoBehaviour
     private void DetectMouse()
     {
         Vector2 MousePos = Input.mousePosition;
-        Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);
-        
+        Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);       
         if (Input.GetMouseButtonDown(0) && currenTime>=TimeSpawnTabla)
         {
-            
+        
            // asi se spawnean objetos desde el mismo mouse
             Gamepos.z = 0;
             Debug.Log("Se spawneo tabla");
