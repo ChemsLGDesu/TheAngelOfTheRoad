@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
         DetectMouse();
         currenTime += Time.deltaTime;
     }
-    private void DetectMouse()
+    public void DetectMouse()
     {
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);       
-        if (Input.GetMouseButtonDown(0) && currenTime>=TimeSpawnTabla)
+        if (Input.GetMouseButton(1) && currenTime>=TimeSpawnTabla)
         {
         
            // asi se spawnean objetos desde el mismo mouse
@@ -31,4 +31,5 @@ public class GameManager : MonoBehaviour
             currenTime = 0;
         }
     }
+
 }
