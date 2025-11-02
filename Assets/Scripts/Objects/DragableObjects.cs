@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class DragableObjects : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHandler
+public class DragableObjects : MonoBehaviour,IDragHandler//,IPointerDownHandler,IPointerUpHandler
 {
     [SerializeField] private bool isDragging =false;
   
@@ -15,28 +15,45 @@ public class DragableObjects : MonoBehaviour,IPointerDownHandler,IPointerUpHandl
     
     void Update()
     {
-        
+        DragObject();
     }
     
-    public void OnPointerDown(PointerEventData eventData)
+    public void DragObject()
     {
-        isDragging = true;
-    }
-
-    public void DragObject(PointerEventData eventData)
-    {
-        if (isDragging)
+        Vector2 MousePos = Input.mousePosition;
+        if (Input.GetMouseButton(0)) 
         {
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(eventData.position);
+            isDragging = true;
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(MousePos);
             worldPos.z = 0;
-            transform.position = worldPos;  
+            transform.position = worldPos;
+            
+            //transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);           
         }
-        
+        else
+        {
+            isDragging = false;
+        }      
     }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isDragging=false;
-    }
-    
-    
+    /*
+public void OnPointerDown(PointerEventData eventData)
+{
+   isDragging = true;
+}
+
+public void DragObject(PointerEventData eventData)
+{
+   if (isDragging)
+   {
+
+   }
+
+}
+public void OnPointerUp(PointerEventData eventData)
+{
+   isDragging=false;
+}
+*/
+
+
 }
