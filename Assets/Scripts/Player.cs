@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public float Speed;
+    public static Action OnPlayerWakeup;
     void Start()
     {
         
@@ -16,6 +18,10 @@ public class Player : MonoBehaviour
     public void Walk()
     {
        transform.position += Vector3.right*Speed*Time.deltaTime;
-        //if(transform.position.x>=)
+       
+    }
+    public void PlayerWakeup()
+    {
+        OnPlayerWakeup?.Invoke();
     }
 }
