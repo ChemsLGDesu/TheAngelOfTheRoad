@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DragObjects01
   m_EditorClassIdentifier: 
   ObjectName: Mueble
-  Prefab: {fileID: 1217267906693935869, guid: d07ec905422a5f945a885b23485fdc81, type: 3}
+  Prefab: {fileID: 0}
   SpriteRenderer: {fileID: 0}

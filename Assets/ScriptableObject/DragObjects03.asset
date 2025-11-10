@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1014097d4c03f5a488db446360a51ca0, type: 3}
   m_Name: DragObjects03
   m_EditorClassIdentifier: 
-  ObjectName: 
+  ObjectName: Objeto ruidoso
   Prefab: {fileID: 4858053325375637072, guid: 861c43bf85dd9d146886cb8612d00ea4, type: 3}
   SpriteRenderer: {fileID: 0}
