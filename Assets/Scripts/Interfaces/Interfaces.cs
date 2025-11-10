@@ -2,5 +2,5 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public interface IDragHandler
 {
-    public void DragObject();
+    public void DragObjects();
 }
