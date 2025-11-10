@@ -6,10 +6,11 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     [SerializeField] private bool isDragging = false;
     public List<DragObjects> data;
     private Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
-
+    [SerializeField]private Transform target;
     void Start()
     {
         cam = Camera.main;
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
 
@@ -18,6 +19,8 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
         VerificateDrag();
     }
     
+    /*
+     No funciona el OnPointerDown y OnPointerUp )):
     public void OnPointerDown(PointerEventData eventData)
     {
         isDragging = true;
@@ -28,6 +31,7 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     {
         isDragging = false;
     }
+    */
     public void DragObjects()
     {
         Vector3 MousePos = Input.mousePosition;
@@ -37,7 +41,6 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
         Vector3 worldPos = cam.ScreenToWorldPoint(MousePos);
         transform.position = worldPos;
     }
-
     public void VerificateDrag()
     {
         if (isDragging)
@@ -56,7 +59,24 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
         { 
             isDragging= false;
         
-        }
-        
+        }      
+
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Player barraDespertar = collision.collider.GetComponent<Player>();
+        if (barraDespertar != null)
+        {
+            barraDespertar.DamageOdurability(20);
+        }
+        /*
+        if(coliition.tag == "Player") 
+        {
+            coliition.GetComponent<IDamageOdurability>().DamageOdurability(20);
+            print("collition");
+        }
+        */
+    }
+
+
 }

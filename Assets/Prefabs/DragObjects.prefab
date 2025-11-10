@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8354486243210995677}
   - component: {fileID: 8545286065715703197}
   - component: {fileID: -8061256089289728782}
-  - component: {fileID: 3247118199284359213}
+  - component: {fileID: 5066590110474008353}
   m_Layer: 0
   m_Name: DragObjects
-  m_TagString: Untagged
+  m_TagString: Objetos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   data: []
+  target: {fileID: 3738239997173208769, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
 --- !u!61 &-8061256089289728782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &3247118199284359213
+--- !u!50 &5066590110474008353
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

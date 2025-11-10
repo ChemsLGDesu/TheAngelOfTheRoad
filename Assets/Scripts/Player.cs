@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour,IDamageOdurability
 {
     public float Speed;
     public static Action OnPlayerWakeup;
+    public int barraDespertar = 100;
     void Start()
     {
         
@@ -19,9 +20,16 @@ public class Player : MonoBehaviour
     {
        transform.position += Vector3.right*Speed*Time.deltaTime;
        
-    }
-    public void PlayerWakeup()
+    }   
+     
+    public void DamageOdurability(int reduce)
     {
-        OnPlayerWakeup?.Invoke();
+        reduce = 20;
+        barraDespertar -= reduce;
+        if (barraDespertar <=0)
+        {
+            OnPlayerWakeup?.Invoke();
+            Debug.Log("Luna a despertado");
+        }
     }
 }
