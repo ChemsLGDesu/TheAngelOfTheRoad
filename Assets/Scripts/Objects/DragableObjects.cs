@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private bool isDragging = false;
+    [SerializeField]protected bool isDragging = false;
     public List<DragObjects> data;
-    private Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
-    [SerializeField]private Transform target;
+    protected Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
+    [SerializeField]protected Transform target;
     void Start()
     {
         cam = Camera.main;
@@ -60,23 +60,15 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
             isDragging= false;
         
         }      
-
-    }
+    } 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Player barraDespertar = collision.collider.GetComponent<Player>();
         if (barraDespertar != null)
         {
             barraDespertar.DamageOdurability(20);
-        }
-        /*
-        if(coliition.tag == "Player") 
-        {
-            coliition.GetComponent<IDamageOdurability>().DamageOdurability(20);
-            print("collition");
-        }
-        */
+        }       
     }
 
-
+    
 }
