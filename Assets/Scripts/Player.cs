@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour,IDamageOdurability
 {
+    public PlayerSO data;
     public float Speed;
-    public static Action OnPlayerWakeup;
     public int barraDespertar = 100;
+    public static Action OnPlayerWakeup;
+    
     void Start()
     {
         
@@ -17,9 +19,9 @@ public class Player : MonoBehaviour,IDamageOdurability
         Walk();
     }
     public void Walk()
-    {
-       transform.position += Vector3.right*Speed*Time.deltaTime;
-       
+    { 
+        transform.position += Vector3.right*Speed*Time.deltaTime;
+
     }   
      
     public void DamageOdurability(int reduce)

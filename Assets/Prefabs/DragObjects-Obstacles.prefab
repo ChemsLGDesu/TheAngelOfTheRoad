@@ -60,6 +60,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragObjects-Obstacles
       objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Color.g
+      value: 0.09249612
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: isDragging
       value: 0

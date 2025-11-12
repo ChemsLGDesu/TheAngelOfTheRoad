@@ -8,3 +8,7 @@ public interface IDamageOdurability
 {
     public void DamageOdurability(int reduce);
 }
+public interface IDestroyObjects
+{
+    public void Destroy();
+}

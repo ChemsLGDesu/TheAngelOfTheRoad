@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField]protected bool isDragging = false;
-    public List<DragObjects> data;
+    //public List<> data;
     protected Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
     [SerializeField]protected Transform target;
     void Start()
