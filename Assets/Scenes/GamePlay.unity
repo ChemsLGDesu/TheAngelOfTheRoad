@@ -607,8 +607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TablasPrefab: {fileID: 4923513981973851757, guid: 6214540d6184a5549951e4a3e59ebe3d, type: 3}
-  currenTime: 0
-  TimeSpawnTabla: 3
+  refTabla: {fileID: -7831953913346029140, guid: 6214540d6184a5549951e4a3e59ebe3d, type: 3}
+  currenTime_1: 0
+  TimeSpawnTabla: 1.5
 --- !u!4 &833399253
 Transform:
   m_ObjectHideFlags: 0
