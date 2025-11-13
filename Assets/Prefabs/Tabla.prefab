@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7034083003972207713}
   - component: {fileID: 330360614428655097}
   - component: {fileID: 8064355682570164756}
+  - component: {fileID: -7831953913346029140}
   m_Layer: 0
   m_Name: Tabla
-  m_TagString: Untagged
+  m_TagString: Tabla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,3 +163,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-7831953913346029140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923513981973851757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85780b0207b143f49855d8326f5dc56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
