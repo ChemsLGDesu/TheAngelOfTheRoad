@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: PlayerSO
   m_EditorClassIdentifier: 
   Name: 
+  DetectSize: 0.2
+  Distance: 0.1

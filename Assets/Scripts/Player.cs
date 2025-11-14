@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour,IDamageOdurability
 {
+    [SerializeField]private Rigidbody2D rb;
+    [SerializeField] private float jumpForce;
     public PlayerSO data;
-    public float Speed = 5;
+    public float Speed ;
     public int barraDespertar = 100;
     public static Action OnPlayerWakeup;
-    public bool isInfronTable;
     public Transform DetectionArmReference;
     
     void Start()
@@ -48,6 +49,8 @@ public class Player : MonoBehaviour,IDamageOdurability
             {
                 Speed = 0;
                 print("Collision" + go.name);
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                return true;
             }
             else 
             {

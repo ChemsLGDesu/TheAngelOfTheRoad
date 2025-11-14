@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject TablasPrefab;
-    [SerializeField] private Tabla refTabla;
+    
     [SerializeField] private float currenTime_1;
     
     [SerializeField] private float TimeSpawnTabla = 1.5f;
