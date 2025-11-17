@@ -3,14 +3,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour,IDamageOdurability
 {
-    [SerializeField]private Rigidbody2D rb;
-    [SerializeField] private float jumpForce;
+    public Rigidbody2D rb;   
     public PlayerSO data;
-    public float Speed ;
+    public float Speed = 3.5f ;
     public int barraDespertar = 100;
     public static Action OnPlayerWakeup;
     public Transform DetectionArmReference;
-    
+    public Transform feets;
+
+    public float JumpForce = 4f;
+    public float JumpGravity = 0.8f;
+    public float FallGravity = 1.2f;
+    public bool isGrounded = false;
+
     void Start()
     {
         
@@ -19,15 +24,11 @@ public class Player : MonoBehaviour,IDamageOdurability
     
     void Update()
     {
-        Walk();
+        Walk();      
+        DetectorCollitions();
+        GravityEngine();
         CheckTable();
     }
-    public void Walk()
-    { 
-        transform.position += Vector3.right*Speed*Time.deltaTime;
-
-    }   
-     
     public void DamageOdurability(int reduce)
     {
         reduce = 20;
@@ -38,6 +39,44 @@ public class Player : MonoBehaviour,IDamageOdurability
             Debug.Log("Luna a despertado");
         }
     }
+    
+    public void Walk()
+    { 
+        transform.position += Vector3.right * Speed * Time.deltaTime;
+    }   
+    public void JumpAuto()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+        
+    }
+    public void GravityEngine()
+    {
+        if (rb.linearVelocity.y > 0)
+        {
+            rb.gravityScale = JumpGravity;            
+            return;
+        }
+        else
+        {
+            rb.gravityScale = FallGravity;           
+        }
+    }
+    public void DetectorCollitions()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(feets.transform.position, 0.1f);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].gameObject.tag == "Ground")
+            {
+                isGrounded = true;
+                return;
+            }
+            else
+            {
+                isGrounded = false;
+            }
+        }
+    }
     public bool CheckTable()
     {
         Vector2 size = new Vector2(data.DetectSize,data.DetectSize);
@@ -45,19 +84,18 @@ public class Player : MonoBehaviour,IDamageOdurability
         foreach (var coll in hitInfos) 
         { 
             GameObject go = coll.collider.gameObject;
-            if (go.tag == "Tabla")
+            if (go.tag == "Tabla" )
             {
+                JumpAuto();
                 Speed = 0;
-                print("Collision" + go.name);
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                print("Collision" + go.name);              
                 return true;
             }
             else 
             {
                 Speed = 3.5f;
-            
+               
             }
-
         }
         return false;
     }

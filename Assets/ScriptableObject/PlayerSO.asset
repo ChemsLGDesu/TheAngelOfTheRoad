@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0832629bfab5d274f8b6e48e30bba8b1, type: 3}
   m_Name: PlayerSO
   m_EditorClassIdentifier: 
-  Name: 
-  DetectSize: 0.2
-  Distance: 0.1
+  Name: Luna
+  DetectSize: 0.1
+  Distance: 0.4

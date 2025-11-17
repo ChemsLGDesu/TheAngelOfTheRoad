@@ -50,7 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_Name
-      value: DragObjects
+      value: DragObjects-Destrucable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066590110474008353, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

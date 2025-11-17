@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Objetos
   - Tabla
+  - Ground
   layers:
   - Default
   - TransparentFX
