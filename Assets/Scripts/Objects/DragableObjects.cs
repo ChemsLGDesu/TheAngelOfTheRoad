@@ -12,7 +12,7 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
         cam = Camera.main;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();// patron singleton
 
-        target =  GameManager.Instance.player.GetComponent<Transform>();
+       // target =  GameManager.Instance.player.GetComponent<Transform>();
     }
 
 
@@ -65,7 +65,7 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     } 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Player barraDespertar = collision.collider.GetComponent<Player>();
+        PlayerMovement barraDespertar = collision.collider.GetComponent<PlayerMovement>();
         if (barraDespertar != null)
         {
             barraDespertar.DamageOdurability(20);

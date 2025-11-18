@@ -2,21 +2,16 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{
+{    
     public static GameManager Instance;
     [SerializeField] private GameObject TablasPrefab;
 
-    public Player player;
-    
-    [SerializeField] private float currenTime_1;
+    public PlayerMovement PlayerMovement;
+    [SerializeField] private float currenTime;
     
     [SerializeField] private float TimeSpawnTabla = 1.5f;
 
-    private void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
-    }
+    
     void Start()
     {
         
@@ -26,7 +21,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DetectMouse();
-        currenTime_1 += Time.deltaTime;
+        currenTime += Time.deltaTime;
         
         
     }
@@ -34,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);
-        if (Input.GetMouseButton(1) && currenTime_1 >= TimeSpawnTabla)// implementar impjut system
+        if (Input.GetMouseButton(1) && currenTime >= TimeSpawnTabla)// implementar impjut system
         {
             
             // asi se spawnean objetos desde el mismo mouse
@@ -42,15 +37,15 @@ public class GameManager : MonoBehaviour
             Debug.Log("Se spawneo tabla");
             GameObject TablaPrefab = Instantiate(TablasPrefab, Input.mousePosition, Quaternion.identity);
             TablaPrefab.transform.position = Gamepos;
-            currenTime_1 = 0;
+            currenTime = 0;
         }
               
     }
     public bool IsAbleToSpawn()
     {
-        if(currenTime_1 <= TimeSpawnTabla)
+        if(currenTime <= TimeSpawnTabla)
         {
-            currenTime_1 += Time.deltaTime;
+            currenTime += Time.deltaTime;
             return false;
         }
         else

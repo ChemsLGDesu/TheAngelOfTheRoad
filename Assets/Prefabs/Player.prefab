@@ -74,8 +74,9 @@ GameObject:
   - component: {fileID: 317763713907705300}
   - component: {fileID: 4433137108040892249}
   - component: {fileID: 444026929795215831}
-  - component: {fileID: -1923604261679424275}
   - component: {fileID: 4615677656630599936}
+  - component: {fileID: 2610144552876594197}
+  - component: {fileID: 8145847615558159729}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -193,7 +194,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.35930938, y: 0.039308585}
-    oldSize: {x: 9.125, y: 13.737057}
+    oldSize: {x: 2.28125, y: 3.4342642}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -228,28 +229,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-1923604261679424275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3928226547440229893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40763e2f7380f1c49bbae71d47cbb81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 444026929795215831}
-  data: {fileID: 11400000, guid: 79f013870fa63a64581b5e933df760c5, type: 2}
-  Speed: 3.5
-  barraDespertar: 100
-  DetectionArmReference: {fileID: 8793732184411503070}
-  feets: {fileID: 9138504888721224253}
-  JumpForce: 4
-  JumpGravity: 0.8
-  FallGravity: 1.2
-  isGrounded: 0
 --- !u!95 &4615677656630599936
 Animator:
   serializedVersion: 7
@@ -272,3 +251,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2610144552876594197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928226547440229893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc821c5164959441b071c14d0792ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  data: {fileID: 11400000, guid: 79f013870fa63a64581b5e933df760c5, type: 2}
+--- !u!114 &8145847615558159729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928226547440229893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df93d8e3a0c3a9e49abd04b44508ff42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraDespertar: 100
+  rb: {fileID: 444026929795215831}
+  JumpForce: 4
+  JumpGravity: 0.8
+  FallGravity: 1.2
+  isGrounded: 0
+  isAbleToJump: 1
+  DetectionArmReference: {fileID: 8793732184411503070}
+  feets: {fileID: 9138504888721224253}
+  Speed: 3.5
+  DetectSize: 0
+  Distance: 0
