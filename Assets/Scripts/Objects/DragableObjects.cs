@@ -10,7 +10,9 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     void Start()
     {
         cam = Camera.main;
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();// patron singleton
+
+        target =  GameManager.Instance.player.GetComponent<Transform>();
     }
 
 

@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 2703294561111308093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0.1, z: 0}
+  m_LocalPosition: {x: 10.5, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4433137108040892249}
   - component: {fileID: 444026929795215831}
   - component: {fileID: -1923604261679424275}
-  - component: {fileID: -2324455533705210281}
+  - component: {fileID: 4615677656630599936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -93,7 +93,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1.8327519, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8793732184411503070}
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3928226547440229893}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -193,8 +193,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.35930938, y: 0.039308585}
-    oldSize: {x: 36.5, y: 54.948227}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 9.125, y: 13.737057}
+    newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -216,7 +216,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1.2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -250,7 +250,7 @@ MonoBehaviour:
   JumpGravity: 0.8
   FallGravity: 1.2
   isGrounded: 0
---- !u!95 &-2324455533705210281
+--- !u!95 &4615677656630599936
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
