@@ -15,6 +15,7 @@ public class Player : MonoBehaviour,IDamageOdurability
     public float JumpGravity = 0.8f;
     public float FallGravity = 1.2f;
     public bool isGrounded = false;
+    public bool isAbleToJump = true;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour,IDamageOdurability
         DetectorCollitions();
         GravityEngine();
         CheckTable();
+        //JumpAuto();
     }
     public void DamageOdurability(int reduce)
     {
@@ -46,7 +48,13 @@ public class Player : MonoBehaviour,IDamageOdurability
     }   
     public void JumpAuto()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+        // rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+        if (isAbleToJump)
+        {
+            rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            print("Jump");
+            isAbleToJump = false;
+        }
         
     }
     public void GravityEngine()
@@ -69,6 +77,7 @@ public class Player : MonoBehaviour,IDamageOdurability
             if (colliders[i].gameObject.tag == "Ground")
             {
                 isGrounded = true;
+                isAbleToJump = true;
                 return;
             }
             else
@@ -84,7 +93,7 @@ public class Player : MonoBehaviour,IDamageOdurability
         foreach (var coll in hitInfos) 
         { 
             GameObject go = coll.collider.gameObject;
-            if (go.tag == "Tabla" )
+            if (go.tag == "Tabla"  && isGrounded)
             {
                 JumpAuto();
                 Speed = 0;

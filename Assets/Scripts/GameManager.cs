@@ -3,12 +3,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     [SerializeField] private GameObject TablasPrefab;
+
+    public Player player;
     
     [SerializeField] private float currenTime_1;
     
     [SerializeField] private float TimeSpawnTabla = 1.5f;
-    
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
     void Start()
     {
         
@@ -26,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);
-        if (Input.GetMouseButton(1) && currenTime_1 >= TimeSpawnTabla)
+        if (Input.GetMouseButton(1) && currenTime_1 >= TimeSpawnTabla)// implementar impjut system
         {
             
             // asi se spawnean objetos desde el mismo mouse
@@ -37,6 +45,18 @@ public class GameManager : MonoBehaviour
             currenTime_1 = 0;
         }
               
+    }
+    public bool IsAbleToSpawn()
+    {
+        if(currenTime_1 <= TimeSpawnTabla)
+        {
+            currenTime_1 += Time.deltaTime;
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     
