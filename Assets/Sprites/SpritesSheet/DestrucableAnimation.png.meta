@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: d54a0231ac4586b408c1ba24e35c8f39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1281140205318619468
+    second: DestrucableAnimation_0
+  - first:
+      213: 8461831432874619569
+    second: DestrucableAnimation_1
+  - first:
+      213: 7334466246969421606
+    second: DestrucableAnimation_2
+  - first:
+      213: 7544066283998032269
+    second: DestrucableAnimation_3
+  - first:
+      213: -812608842213918939
+    second: DestrucableAnimation_4
+  - first:
+      213: -8608397524601862406
+    second: DestrucableAnimation_5
+  - first:
+      213: 819250778996993649
+    second: DestrucableAnimation_6
+  - first:
+      213: -9196060570741690805
+    second: DestrucableAnimation_7
+  - first:
+      213: 615649817076914960
+    second: DestrucableAnimation_8
+  - first:
+      213: -2679997473107935750
+    second: DestrucableAnimation_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DestrucableAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 259
+        width: 35
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.072235875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41cc7d9a3687c110800000000000000
+      internalID: 1281140205318619468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 259
+        width: 35
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5398468, y: 0.060516357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2f9b10bd67e6570800000000000000
+      internalID: 8461831432874619569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 259
+        width: 35
+        height: 119
+      alignment: 9
+      pivot: {x: 0.48007727, y: 0.05465647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f64b3213249c560800000000000000
+      internalID: 7334466246969421606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 131
+        width: 35
+        height: 119
+      alignment: 9
+      pivot: {x: 0.48007703, y: 0.031217432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8134bba058e1b860800000000000000
+      internalID: 7544066283998032269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 131
+        width: 35
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5199232, y: 0.007778392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5277f7a309809b4f0800000000000000
+      internalID: -812608842213918939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 131
+        width: 40
+        height: 94
+      alignment: 9
+      pivot: {x: 0.4797325, y: 0.03428098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af601c48f04d88880800000000000000
+      internalID: -8608397524601862406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 6
+        width: 48
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4672645, y: 0.076084346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ee3103e309e5b00800000000000000
+      internalID: 819250778996993649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 7
+        width: 49
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4927489, y: 0.046460427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e27fb32a7016080800000000000000
+      internalID: -9196060570741690805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 2
+        width: 51
+        height: 45
+      alignment: 9
+      pivot: {x: 0.48310015, y: 0.12651213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b57ec2f3a3b8800800000000000000
+      internalID: 615649817076914960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestrucableAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 10
+        width: 31
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5133913, y: 0.11081055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdf4785f7cbecad0800000000000000
+      internalID: -2679997473107935750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1e71a2bd4a20bea44a4d86aad0e3a354
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DestrucableAnimation_0: 1281140205318619468
+      DestrucableAnimation_1: 8461831432874619569
+      DestrucableAnimation_2: 7334466246969421606
+      DestrucableAnimation_3: 7544066283998032269
+      DestrucableAnimation_4: -812608842213918939
+      DestrucableAnimation_5: -8608397524601862406
+      DestrucableAnimation_6: 819250778996993649
+      DestrucableAnimation_7: -9196060570741690805
+      DestrucableAnimation_8: 615649817076914960
+      DestrucableAnimation_9: -2679997473107935750
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
