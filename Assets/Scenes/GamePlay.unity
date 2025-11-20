@@ -1344,6 +1344,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3738239997173208769, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
   m_PrefabInstance: {fileID: 1201014609403877621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &866317425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8145847615558159729, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
+  m_PrefabInstance: {fileID: 1201014609403877621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df93d8e3a0c3a9e49abd04b44508ff42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &870357671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2295207617236187699, guid: 257e40a46f177874db98adde47415a30, type: 3}
@@ -4423,6 +4434,10 @@ PrefabInstance:
       propertyPath: JumpForce
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2610144552876594197, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 866317425}
     - target: {fileID: 3738239997173208769, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7

@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         
         
     }
-    public void DetectMouse()
+    public void DetectMouse() // hacerlo con Input System
     {
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos =Camera.main.ScreenToWorldPoint(MousePos);
