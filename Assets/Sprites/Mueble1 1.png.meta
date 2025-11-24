@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1c91509f16ebd4a49bd32213d3efdeb4
+guid: 2878702184551b443809ab5d2a65a4aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3581194192087749682
-    second: PatoDeGoma_0
+      213: -8469045471097717129
+    second: Mueble1 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PatoDeGoma_0
+      name: Mueble1 1_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 15
-        width: 89
-        height: 87
+        x: 7
+        y: 0
+        width: 121
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecbeae43bda0d4ec0800000000000000
-      internalID: -3581194192087749682
+      spriteID: 77ef694d308e77a80800000000000000
+      internalID: -8469045471097717129
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PatoDeGoma_0: -3581194192087749682
+      Mueble1 1_0: -8469045471097717129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
