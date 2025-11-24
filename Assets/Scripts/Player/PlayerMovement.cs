@@ -112,4 +112,16 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
             Debug.Log("Luna a despertado");
         }
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("CamaVictory"))
+        {
+            FindAnyObjectByType<VictoryAndDefeat>().MostrarVictory();
+        }
+
+        if (collision.CompareTag("Objetos"))
+        {
+            FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
+        }
+    }
 }
