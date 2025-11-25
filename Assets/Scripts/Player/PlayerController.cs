@@ -18,8 +18,6 @@ public class PlayerController : MonoBehaviour
         playerMovement.DetectSize = data.DetectSize;
         playerMovement.Distance = data.Distance;
     }
-
-    
     void Update()
     {
         

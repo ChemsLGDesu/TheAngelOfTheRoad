@@ -14,11 +14,13 @@ public class VictoryAndDefeat : MonoBehaviour
     public void MostrarDefeat()
     {
         DefeatPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void ReiniciarNivel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 
     public void IrAlMenuPrincipal()
