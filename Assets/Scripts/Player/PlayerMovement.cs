@@ -48,8 +48,7 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
         
         if (isAbleToJump)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
-            //rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);           
             print("Jump");
             isAbleToJump = false;
         }
