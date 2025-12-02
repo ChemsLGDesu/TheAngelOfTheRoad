@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
     public bool isAbleToJump = true;
     public Transform DetectionArmReference;
     public Transform feets;
-    public float Speed = 3.5f ;
+    public float Speed ;
     public float DetectSize;
     public float Distance;
     void Start()
@@ -89,14 +89,13 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
             if (go.tag == "Tabla"  && isGrounded)
             {
                 JumpAuto();
-                Speed = 0;
+              
                 print("Collision" + go.name);              
                 return true;
             }
             else 
             {
-                Speed = 3.5f;
-               
+                Speed = 3.5f;              
             }
         }
         return false;
@@ -123,5 +122,12 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
         {
             FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
         }
+
+        if (collision.gameObject.CompareTag("RestardBlock"))
+        {
+            Debug.Log("Se despierta");
+            
+        }
     }
+   
 }

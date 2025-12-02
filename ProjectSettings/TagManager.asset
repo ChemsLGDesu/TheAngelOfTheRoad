@@ -8,6 +8,7 @@ TagManager:
   - Tabla
   - Ground
   - CamaVictory
+  - RestardBlock
   layers:
   - Default
   - TransparentFX
