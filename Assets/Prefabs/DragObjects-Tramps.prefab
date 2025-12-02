@@ -9,14 +9,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2815
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5425
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.39
       objectReference: {fileID: 0}
@@ -59,18 +51,6 @@ PrefabInstance:
     - target: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_Name
       value: DragObjects-Tramps
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
-      propertyPath: m_Color.g
-      value: 0.83459985
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

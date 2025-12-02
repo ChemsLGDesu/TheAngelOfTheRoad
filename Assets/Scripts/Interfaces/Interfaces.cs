@@ -10,5 +10,5 @@ public interface IDamageOdurability
 }
 public interface IDestroyObjects
 {
-    public void Destroy();
+    public void DestroyObject();
 }

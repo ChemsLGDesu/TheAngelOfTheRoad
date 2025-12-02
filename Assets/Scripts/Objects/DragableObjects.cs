@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandler, IPointerUpHandler
 {
+    public ObstacleDataSO data;
     [SerializeField]protected bool isDragging = false;
     //public List<> data;
     protected Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
@@ -11,6 +12,8 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     {
         cam = Camera.main;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();// patron singleton
+
+        GetComponent<SpriteRenderer>().sprite = data.icon;
 
        // target =  GameManager.Instance.player.GetComponent<Transform>();
     }

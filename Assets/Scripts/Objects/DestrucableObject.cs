@@ -3,6 +3,7 @@ using UnityEngine;
 public class DestrucableObject : DragableObjects,IDamageOdurability ,IDestroyObjects
 {
     [SerializeField] protected int durability = 40;
+    Animator animator;
     void Start()
     {
         
@@ -22,16 +23,17 @@ public class DestrucableObject : DragableObjects,IDamageOdurability ,IDestroyObj
         if (Vector3.Distance (Gamepos,transform.position) <= 1)
         {
             durability -=reduce;
-            Destroy();
+            if (durability <= 0)
+                animator.Play("DestroyAnim");
+           // Destroy();
         }       
     }
     
-    public void Destroy()
+    public void DestroyObject()
     {
-        if(durability <= 0) 
-        { 
+
             Destroy(gameObject);
         
-        }
+        
     }
 }
