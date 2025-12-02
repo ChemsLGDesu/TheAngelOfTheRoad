@@ -28,8 +28,8 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
         CheckTable();
     }
     public void Walk()
-    { 
-        transform.position += Vector3.right * Speed * Time.deltaTime;
+    {
+        rb.linearVelocity = new Vector2(Speed, rb.linearVelocity.y);                              //
     }
     public void GravityEngine()
     {
