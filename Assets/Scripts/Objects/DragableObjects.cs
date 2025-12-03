@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandler, IPointerUpHandler
 {
+    public static DragableObjects Instance;
     public ObstacleDataSO data;
     [SerializeField]protected bool isDragging = false;
     //public List<> data;
@@ -56,7 +57,7 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
     }
     public void OnMouseOver()
     {
-        if (Input.GetMouseButton(0))
+        if (GameManager.Instance.inputs.Player.Interact.ReadValue<float>()>0)//devuelve un float entre 0 y 1 cuando se pulsa un boton del mouse que es del inputsystem
         {
             isDragging = true;
         }
