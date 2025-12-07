@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandler, IPointerUpHandler
+public class DragableObjects : MonoBehaviour, IDragHandler
 {
     public static DragableObjects Instance;
     public ObstacleDataSO data;
@@ -15,29 +15,13 @@ public class DragableObjects : MonoBehaviour, IDragHandler//, IPointerDownHandle
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();// patron singleton
 
         GetComponent<SpriteRenderer>().sprite = data.icon;
-
-       // target =  GameManager.Instance.player.GetComponent<Transform>();
     }
 
 
     void Update()
     {
         VerificateDrag();
-    }
-    
-    /*
-     No funciona el OnPointerDown y OnPointerUp )):
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        isDragging = true;
-    }
-
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isDragging = false;
-    }
-    */
+    }    
     public void DragObjects()
     {
         Vector3 MousePos = Input.mousePosition;
