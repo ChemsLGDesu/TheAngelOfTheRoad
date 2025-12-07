@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DestrucableObject : DragableObjects,IDamageOdurability ,IDestroyObjects
-{
-    [SerializeField] protected int durability = 40;
+public class DestrucableObject : DragableObjects,IDestroyObjects
+{   
+    [SerializeField] protected bool hasTouched = false;
     Animator animator;
     void Start()
     {
@@ -12,28 +12,28 @@ public class DestrucableObject : DragableObjects,IDamageOdurability ,IDestroyObj
     
     void Update()
     {
-        DamageOdurability(10);
+        TouchToDestroy();
     }
-    public void DamageOdurability(int reduce)
-    {
-        reduce = 10;
+    public void TouchToDestroy()
+    {      
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos = Camera.main.ScreenToWorldPoint(MousePos);
         Gamepos.z = 0;
-        if (Vector3.Distance (Gamepos,transform.position) <= 1)
+        if (Vector3.Distance (Gamepos,transform.position) <= 2f)
         {
-            durability -=reduce;
-            if (durability <= 0)
-                animator.Play("DestroyAnim");
-           // Destroy();
-        }       
+            Debug.Log("Touched");
+            hasTouched = true;
+            animator.Play("DestroyAnim");
+            DestroyObject();
+        }
+        else
+        {
+            hasTouched = false;
+        }
     }
     
     public void DestroyObject()
     {
-
-            Destroy(gameObject);
-        
-        
+            Destroy(gameObject,3);       
     }
 }

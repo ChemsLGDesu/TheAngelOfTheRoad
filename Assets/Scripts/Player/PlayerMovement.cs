@@ -88,15 +88,10 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
             GameObject go = coll.collider.gameObject;
             if (go.tag == "Tabla"  && isGrounded)
             {
-                JumpAuto();
-              
+                JumpAuto();             
                 print("Collision" + go.name);              
                 return true;
-            }
-            else 
-            {
-                Speed = 3.5f;              
-            }
+            }           
         }
         return false;
     }

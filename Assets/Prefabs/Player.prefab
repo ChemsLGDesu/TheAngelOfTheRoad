@@ -286,6 +286,6 @@ MonoBehaviour:
   isAbleToJump: 1
   DetectionArmReference: {fileID: 8793732184411503070}
   feets: {fileID: 9138504888721224253}
-  Speed: 3.5
+  Speed: 0
   DetectSize: 0
   Distance: 0

@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_Offset.y
-      value: 0.50136536
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.5000003
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.072235875
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -41,16 +41,20 @@ PrefabInstance:
       value: 1.19
       objectReference: {fileID: 0}
     - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.709427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0082614
+      value: 3.6447
       objectReference: {fileID: 0}
     - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.4185
       objectReference: {fileID: 0}
     - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0091
+      value: 0.1846
       objectReference: {fileID: 0}
     - target: {fileID: 1157263192988520371, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -96,12 +100,49 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1281140205318619468, guid: d54a0231ac4586b408c1ba24e35c8f39, type: 3}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: isDragging
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6566044554085817033}
   m_SourcePrefab: {fileID: 100100000, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+--- !u!1 &2536762154761387134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+  m_PrefabInstance: {fileID: 4168780715449152010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6566044554085817033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2536762154761387134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f705fc20a930be4b8f43150ea0bb697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 3bfb1e4e10f048b43aa48ccca26466da, type: 2}
+  isDragging: 0
+  target: {fileID: 3738239997173208769, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
+  hasTouched: 0
