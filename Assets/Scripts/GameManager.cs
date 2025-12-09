@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject TablasPrefab;
     public InputSystem_Actions inputs;
     public PlayerMovement PlayerMovement;
-    [SerializeField] private float currenTime;  
-    [SerializeField] private float TimeSpawnTabla = 1.5f;
+    public float currenTime;  
+    public float TimeSpawnTabla = 2f;
 
     private void Awake()
     {
@@ -58,7 +58,6 @@ public class GameManager : MonoBehaviour
     {
         if(currenTime <= TimeSpawnTabla)
         {
-            currenTime += Time.deltaTime;
             return false;
         }
         else
