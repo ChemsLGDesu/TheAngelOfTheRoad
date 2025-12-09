@@ -33,6 +33,14 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8061256089289728782, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.35
       objectReference: {fileID: 0}
@@ -92,17 +100,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragObjects-Destrucable
       objectReference: {fileID: 0}
+    - target: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_TagString
+      value: Objetos
+      objectReference: {fileID: 0}
     - target: {fileID: 5066590110474008353, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_Size.y
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1281140205318619468, guid: d54a0231ac4586b408c1ba24e35c8f39, type: 3}
+      objectReference: {fileID: 6350629621105929020, guid: 0181dca16f743bf4191ef59d4f2f8fb3, type: 3}
     - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354486243210995677, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8545286065715703197, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       propertyPath: data
@@ -124,6 +148,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6566044554085817033}
+    - targetCorrespondingSourceObject: {fileID: 1940515171674656372, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6536163912294404730}
   m_SourcePrefab: {fileID: 100100000, guid: 9c09618853ad6fb46b46e594b61b5c58, type: 3}
 --- !u!1 &2536762154761387134 stripped
 GameObject:
@@ -146,3 +173,25 @@ MonoBehaviour:
   isDragging: 0
   target: {fileID: 3738239997173208769, guid: ac1ea57fd0cf9ee4eb4d349ee266a8fd, type: 3}
   hasTouched: 0
+--- !u!95 &6536163912294404730
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2536762154761387134}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a676539e6879eb944b7dbf1dd1dacd7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

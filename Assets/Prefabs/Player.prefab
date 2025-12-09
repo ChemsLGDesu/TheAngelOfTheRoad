@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc821c5164959441b071c14d0792ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 8145847615558159729}
   data: {fileID: 11400000, guid: 79f013870fa63a64581b5e933df760c5, type: 2}
 --- !u!114 &8145847615558159729
 MonoBehaviour:
@@ -286,6 +286,6 @@ MonoBehaviour:
   isAbleToJump: 1
   DetectionArmReference: {fileID: 8793732184411503070}
   feets: {fileID: 9138504888721224253}
-  Speed: 0
+  Speed: 3
   DetectSize: 0
   Distance: 0

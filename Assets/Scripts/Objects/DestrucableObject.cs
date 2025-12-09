@@ -6,7 +6,12 @@ public class DestrucableObject : DragableObjects,IDestroyObjects
     Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+
+        if (animator == null)
+        {
+            Debug.LogError("El componente Animator no se encontró en " + gameObject.name);
+        }
     }
 
     
@@ -15,7 +20,8 @@ public class DestrucableObject : DragableObjects,IDestroyObjects
         TouchToDestroy();
     }
     public void TouchToDestroy()
-    {      
+    {
+        if (hasTouched) return;
         Vector2 MousePos = Input.mousePosition;
         Vector3 Gamepos = Camera.main.ScreenToWorldPoint(MousePos);
         Gamepos.z = 0;
@@ -23,12 +29,8 @@ public class DestrucableObject : DragableObjects,IDestroyObjects
         {
             Debug.Log("Touched");
             hasTouched = true;
-            animator.Play("DestroyAnim");
+            animator.SetTrigger("StartDestroy");
             DestroyObject();
-        }
-        else
-        {
-            hasTouched = false;
         }
     }
     

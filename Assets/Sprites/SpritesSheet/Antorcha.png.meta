@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: d54a0231ac4586b408c1ba24e35c8f39
+guid: e8e34bf79611d3f48a7ae69cf13a263b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1281140205318619468
-    second: DestrucableAnimation_0
+      213: 1720627809295142107
+    second: Antorcha_0
   - first:
-      213: 8461831432874619569
-    second: DestrucableAnimation_1
+      213: 4520102098571276940
+    second: Antorcha_1
   - first:
-      213: 7334466246969421606
-    second: DestrucableAnimation_2
+      213: -5618472083944992868
+    second: Antorcha_2
   - first:
-      213: 7544066283998032269
-    second: DestrucableAnimation_3
+      213: -5510666813692985842
+    second: Antorcha_3
   - first:
-      213: -812608842213918939
-    second: DestrucableAnimation_4
+      213: -3395668701736997702
+    second: Antorcha_4
   - first:
-      213: -8608397524601862406
-    second: DestrucableAnimation_5
+      213: 2472176414282149147
+    second: Antorcha_5
   - first:
-      213: 819250778996993649
-    second: DestrucableAnimation_6
+      213: -2080990373090099489
+    second: Antorcha_6
   - first:
-      213: -9196060570741690805
-    second: DestrucableAnimation_7
+      213: -8956534141167896344
+    second: Antorcha_7
   - first:
-      213: 615649817076914960
-    second: DestrucableAnimation_8
+      213: 482210027585628381
+    second: Antorcha_8
   - first:
-      213: -2679997473107935750
-    second: DestrucableAnimation_9
+      213: 1893657590468160249
+    second: Antorcha_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,221 +127,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DestrucableAnimation_0
+      name: Antorcha_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 259
-        width: 35
-        height: 119
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c41cc7d9a3687c110800000000000000
-      internalID: 1281140205318619468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_1
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 259
-        width: 35
-        height: 119
-      alignment: 9
-      pivot: {x: 0.5398468, y: 0.060516357}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b2f9b10bd67e6570800000000000000
-      internalID: 8461831432874619569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_2
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 259
-        width: 35
-        height: 119
-      alignment: 9
-      pivot: {x: 0.48007727, y: 0.05465647}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62f64b3213249c560800000000000000
-      internalID: 7334466246969421606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 131
-        width: 35
-        height: 119
-      alignment: 9
-      pivot: {x: 0.48007703, y: 0.031217432}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8134bba058e1b860800000000000000
-      internalID: 7544066283998032269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_4
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 131
-        width: 35
-        height: 119
-      alignment: 9
-      pivot: {x: 0.5199232, y: 0.007778392}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5277f7a309809b4f0800000000000000
-      internalID: -812608842213918939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_5
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 131
-        width: 40
-        height: 94
-      alignment: 9
-      pivot: {x: 0.4797325, y: 0.03428098}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af601c48f04d88880800000000000000
-      internalID: -8608397524601862406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DestrucableAnimation_6
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 6
+        x: 41
+        y: 262
         width: 48
-        height: 65
+        height: 118
       alignment: 9
-      pivot: {x: 0.4672645, y: 0.076084346}
+      pivot: {x: 0.4936603, y: 0.012495914}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17ee3103e309e5b00800000000000000
-      internalID: 819250778996993649
+      spriteID: bdc02b350e5e0e710800000000000000
+      internalID: 1720627809295142107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DestrucableAnimation_7
+      name: Antorcha_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 7
+        x: 169
+        y: 262
+        width: 50
+        height: 118
+      alignment: 9
+      pivot: {x: 0.4780652, y: 0.014071707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82b6ddf8e0aabe30800000000000000
+      internalID: 4520102098571276940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 263
+        width: 50
+        height: 117
+      alignment: 9
+      pivot: {x: 0.50779295, y: 0.002919776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f8208586d2702b0800000000000000
+      internalID: -5618472083944992868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 262
         width: 49
-        height: 65
+        height: 116
       alignment: 9
-      pivot: {x: 0.4927489, y: 0.046460427}
+      pivot: {x: 0.50304675, y: 0.01399915}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4e27fb32a7016080800000000000000
-      internalID: -9196060570741690805
+      spriteID: e0ebb4ecabd2683b0800000000000000
+      internalID: -5510666813692985842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DestrucableAnimation_8
+      name: Antorcha_4
       rect:
         serializedVersion: 2
-        x: 157
-        y: 2
-        width: 51
-        height: 45
+        x: 40
+        y: 134
+        width: 49
+        height: 111
       alignment: 9
-      pivot: {x: 0.48310015, y: 0.12651213}
+      pivot: {x: 0.49914706, y: 0.0137366215}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b57ec2f3a3b8800800000000000000
-      internalID: 615649817076914960
+      spriteID: abced0a8e4920e0d0800000000000000
+      internalID: -3395668701736997702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DestrucableAnimation_9
+      name: Antorcha_5
       rect:
         serializedVersion: 2
-        x: 295
-        y: 10
-        width: 31
-        height: 32
+        x: 164
+        y: 134
+        width: 53
+        height: 116
       alignment: 9
-      pivot: {x: 0.5133913, y: 0.11081055}
+      pivot: {x: 0.5423391, y: 0.013204246}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afdf4785f7cbecad0800000000000000
-      internalID: -2679997473107935750
+      spriteID: b1de263c95fee4220800000000000000
+      internalID: 2472176414282149147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 134
+        width: 53
+        height: 114
+      alignment: 9
+      pivot: {x: 0.5510323, y: 0.017597534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdef4fef746de13e0800000000000000
+      internalID: -2080990373090099489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 55
+        height: 117
+      alignment: 9
+      pivot: {x: 0.52157646, y: 0.017637726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8770107aff3b380800000000000000
+      internalID: -8956534141167896344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 6
+        width: 54
+        height: 118
+      alignment: 9
+      pivot: {x: 0.51352155, y: 0.017141335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd86f59177721b600800000000000000
+      internalID: 482210027585628381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antorcha_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 6
+        width: 56
+        height: 116
+      alignment: 9
+      pivot: {x: 0.55085427, y: 0.018142298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9faa316ab8f974a10800000000000000
+      internalID: 1893657590468160249
       vertices: []
       indices: 
       edges: []
@@ -350,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1e71a2bd4a20bea44a4d86aad0e3a354
+    spriteID: 40b576976f7b6c04f8fc2c626cd02c3f
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DestrucableAnimation_0: 1281140205318619468
-      DestrucableAnimation_1: 8461831432874619569
-      DestrucableAnimation_2: 7334466246969421606
-      DestrucableAnimation_3: 7544066283998032269
-      DestrucableAnimation_4: -812608842213918939
-      DestrucableAnimation_5: -8608397524601862406
-      DestrucableAnimation_6: 819250778996993649
-      DestrucableAnimation_7: -9196060570741690805
-      DestrucableAnimation_8: 615649817076914960
-      DestrucableAnimation_9: -2679997473107935750
+      Antorcha_0: 1720627809295142107
+      Antorcha_1: 4520102098571276940
+      Antorcha_2: -5618472083944992868
+      Antorcha_3: -5510666813692985842
+      Antorcha_4: -3395668701736997702
+      Antorcha_5: 2472176414282149147
+      Antorcha_6: -2080990373090099489
+      Antorcha_7: -8956534141167896344
+      Antorcha_8: 482210027585628381
+      Antorcha_9: 1893657590468160249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
