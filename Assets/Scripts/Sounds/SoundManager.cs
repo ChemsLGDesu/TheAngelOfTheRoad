@@ -6,7 +6,7 @@ public enum SoundType
     NUBE,
     PATOS,
     DEATH,
-    MUEBLES,
+    MURO
 }
 
 [RequireComponent(typeof(AudioSource))]

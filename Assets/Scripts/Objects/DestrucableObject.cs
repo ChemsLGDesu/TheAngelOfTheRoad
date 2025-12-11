@@ -28,6 +28,7 @@ public class DestrucableObject : Objects, IDestroyObjects
         if (Vector3.Distance (Gamepos,transform.position) <= 2f)
         {            
             hasTouched = true;
+            SoundManager.PlaySound(SoundType.MURO);
             animator.SetTrigger("StartDestroy");
             DestroyObject();
         }

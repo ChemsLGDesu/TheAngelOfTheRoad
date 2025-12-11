@@ -115,7 +115,8 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
 
         if (collision.gameObject.CompareTag("Objetos"))
         {
-            FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
+            DamageOdurability(0);
+            GameOver();
         }
 
         if (collision.gameObject.tag == "RestardBlock")

@@ -16,6 +16,7 @@ public class VictoryAndDefeat : MonoBehaviour
     public void MostrarDefeat()
     {
         DefeatPanel.SetActive(true);
+        SoundManager.PlaySound(SoundType.DEATH);
         Time.timeScale = 0;
         OnVictoryOrDefeat?.Invoke();
     }
