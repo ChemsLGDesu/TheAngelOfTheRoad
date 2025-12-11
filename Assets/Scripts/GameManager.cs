@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        TestTrySpawnTable(); 
     }
     private void OnEnable()
     {
@@ -82,5 +82,24 @@ public class GameManager : MonoBehaviour
     private void OnDragObj(InputAction.CallbackContext context)
     {
         DragableObjects.Instance.VerificateDrag();
+    }
+    public void TestTrySpawnTable()
+    {
+        try
+        {
+            Instantiate(TablasPrefab, Input.mousePosition, Quaternion.identity);
+        }
+        catch (NullReferenceException ex)
+        {
+            Debug.Log("Se intento spawnear tabla" + ex);
+        }
+        catch (Exception ex)
+        {
+            Debug.Log(ex);
+        }
+        finally
+        {
+            Debug.Log("Se intento ejecutar el codigo");
+        }
     }
 }

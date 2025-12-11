@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
     public bool isAbleToJump = true;
     public Transform DetectionArmReference;
     public Transform feets;
-    public float Speed ;
+    public float Speed;
     public float DetectSize;
     public float Distance;
     void Start()
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
     }
     public void Walk()
     {
-        rb.linearVelocity = new Vector2(Speed, rb.linearVelocity.y);                              //
+        rb.linearVelocity = new Vector2(Speed, rb.linearVelocity.y);                             
     }
     public void GravityEngine()
     {
@@ -118,10 +118,18 @@ public class PlayerMovement : MonoBehaviour,IDamageOdurability
             FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
         }
 
-        if (collision.gameObject.CompareTag("RestardBlock"))
+        if (collision.gameObject.tag == "RestardBlock")
         {
-            Debug.Log("Se despierta");
-            
+            FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            Speed = 0;
+        }
+    }
+    public void GameOver()
+    {
+        if(barraDespertar <= 0)
+        {
+            FindAnyObjectByType<VictoryAndDefeat>().MostrarDefeat();
         }
     }
    
