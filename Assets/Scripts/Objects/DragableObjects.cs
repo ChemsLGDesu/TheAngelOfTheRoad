@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class DragableObjects : MonoBehaviour, IDragHandler
+public class DragableObjects : MonoBehaviour, IDragHandler , IDestroyObjects
 {
     public static DragableObjects Instance;
     public ObstacleDataSO data;
@@ -68,8 +68,14 @@ public class DragableObjects : MonoBehaviour, IDragHandler
         if (barraDespertar != null)
         {
             barraDespertar.DamageOdurability(20);
-        }       
+        }
+       if(collision.gameObject.tag=="RestardBlock")
+       {
+            DestroyObject();
+       }
     }
-
-    
+    public void DestroyObject()
+    {
+        Destroy(gameObject);
+    }    
 }
