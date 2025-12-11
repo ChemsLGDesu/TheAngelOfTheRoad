@@ -36,6 +36,6 @@ public class DestrucableObject : DragableObjects,IDestroyObjects
     
     public void DestroyObject()
     {
-            Destroy(gameObject,2);       
+            Destroy(gameObject,1);       
     }
 }

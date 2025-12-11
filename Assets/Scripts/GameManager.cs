@@ -72,7 +72,8 @@ public class GameManager : MonoBehaviour
         if (context.performed && currenTime >= TimeSpawnTabla)
         {
             // asi se spawnean objetos desde el mismo mouse
-            Gamepos.z = 0;          
+            Gamepos.z = 0;
+            SoundManager.PlaySound(SoundType.NUBE);
             GameObject TablaPrefab = Instantiate(TablasPrefab, Input.mousePosition, Quaternion.identity);
             TablaPrefab.transform.position = Gamepos;
             currenTime = 0;

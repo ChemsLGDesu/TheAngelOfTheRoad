@@ -9,6 +9,8 @@ public class DragableObjects : MonoBehaviour, IDragHandler
     //public List<> data;
     protected Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
     [SerializeField]protected Transform target;
+
+    private bool hasSoundPlayed = false;
     void Start()
     {
         cam = Camera.main;
@@ -36,6 +38,15 @@ public class DragableObjects : MonoBehaviour, IDragHandler
         if (isDragging)
         {
             DragObjects();
+            if (!hasSoundPlayed)
+            {
+                SoundManager.PlaySound(SoundType.PATOS);
+                hasSoundPlayed = true;
+            }
+        }
+        else
+        {
+            hasSoundPlayed = false;
         }
 
     }
