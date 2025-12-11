@@ -176,6 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85780b0207b143f49855d8326f5dc56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectName: Nube
+  objectID: 5
   boxCollider2D: {fileID: 8064355682570164756}
 --- !u!95 &7212812217895236962
 Animator:

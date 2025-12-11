@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class DragableObjects : MonoBehaviour, IDragHandler , IDestroyObjects
+public class DragableObjects : Objects, IDragHandler , IDestroyObjects
 {
     public static DragableObjects Instance;
     public ObstacleDataSO data;
-    [SerializeField]protected bool isDragging = false;
-    //public List<> data;
+    [SerializeField]protected bool isDragging = false;   
     protected Camera cam; // sirve para guardar una referencia a la camara pirncipal y convierte la posicion del mouse a coordenads del mundo
     [SerializeField]protected Transform target;
 

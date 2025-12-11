@@ -1,9 +1,9 @@
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
-public class Tabla : MonoBehaviour
+public class Cloud : Objects
 {
-    public static Tabla Instance;
+    public static Cloud Instance;
     public BoxCollider2D boxCollider2D;
     bool hasTouchGround =  false;
     void Start()
