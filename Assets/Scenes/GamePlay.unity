@@ -5243,6 +5243,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6799919916142246496, guid: ed96fd8ad619f8d4a95736c143356875, type: 3}
+      propertyPath: objectID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799919916142246496, guid: ed96fd8ad619f8d4a95736c143356875, type: 3}
+      propertyPath: objectName
+      value: Pato
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10737,8 +10745,16 @@ PrefabInstance:
       value: 0.4725981
       objectReference: {fileID: 0}
     - target: {fileID: 6566044554085817033, guid: d16a629c7865f7e48aeaa0005940e457, type: 3}
+      propertyPath: objectID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566044554085817033, guid: d16a629c7865f7e48aeaa0005940e457, type: 3}
       propertyPath: hasTouched
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566044554085817033, guid: d16a629c7865f7e48aeaa0005940e457, type: 3}
+      propertyPath: objectName
+      value: Destructable Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13476,6 +13492,14 @@ PrefabInstance:
     - target: {fileID: 5297780485024006817, guid: 257e40a46f177874db98adde47415a30, type: 3}
       propertyPath: m_Simulated
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738021156709292061, guid: 257e40a46f177874db98adde47415a30, type: 3}
+      propertyPath: objectID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738021156709292061, guid: 257e40a46f177874db98adde47415a30, type: 3}
+      propertyPath: objectName
+      value: Mueble
       objectReference: {fileID: 0}
     - target: {fileID: 8945348898146194013, guid: 257e40a46f177874db98adde47415a30, type: 3}
       propertyPath: m_Sprite
@@ -21395,6 +21419,14 @@ PrefabInstance:
     - target: {fileID: 1190115228448742042, guid: 51b9ce10de40b8f42929e78da188b80a, type: 3}
       propertyPath: m_Color.r
       value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577332860540850394, guid: 51b9ce10de40b8f42929e78da188b80a, type: 3}
+      propertyPath: objectID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577332860540850394, guid: 51b9ce10de40b8f42929e78da188b80a, type: 3}
+      propertyPath: objectName
+      value: Mesa
       objectReference: {fileID: 0}
     - target: {fileID: 8321059167464190708, guid: 51b9ce10de40b8f42929e78da188b80a, type: 3}
       propertyPath: m_LocalScale.x
