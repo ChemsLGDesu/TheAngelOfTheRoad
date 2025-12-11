@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 public class VictoryAndDefeat : MonoBehaviour
 {
     public GameObject VictoryPanel;
     public GameObject DefeatPanel;
+    public static Action OnVictoryOrDefeat;
 
     public void MostrarVictory()
     {
@@ -15,6 +17,7 @@ public class VictoryAndDefeat : MonoBehaviour
     {
         DefeatPanel.SetActive(true);
         Time.timeScale = 0;
+        OnVictoryOrDefeat?.Invoke();
     }
 
     public void ReiniciarNivel()

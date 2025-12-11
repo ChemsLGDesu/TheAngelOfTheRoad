@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestrucableObject : DragableObjects,IDestroyObjects
+public class DestrucableObject : DragableObjects
 {   
     [SerializeField] protected bool hasTouched = false;
     Animator animator;
@@ -29,12 +29,7 @@ public class DestrucableObject : DragableObjects,IDestroyObjects
         {            
             hasTouched = true;
             animator.SetTrigger("StartDestroy");
-            DestroyObject();
+            Destroy(gameObject, 1);
         }
-    }
-    
-    public void DestroyObject()
-    {
-            Destroy(gameObject,1);       
-    }
+    }   
 }
